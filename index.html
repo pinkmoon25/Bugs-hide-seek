@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/5ff773556d.js" crossorigin="anonymous"></script>
+  <script src="./js-files/script.js" defer></script>
+  <script src="js-files/storage.js" defer></script>
+  <script src="./js-files/validation.js" defer></script>
+  <title>Portfolio Page</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="#logo" rel="noopener" class="logo">Tushar Singh</a>
+      <button type="button" class="dropdown"> <img src="./Icons/Icon-Menu.svg" alt="Menu icon" class="dropdown"> </button>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
+          <ul class="modal-links">
+            <li><a href="#portfolio" class="modal-links">Portfolio</a></li>
+            <li><a href="#about" class="modal-links">About</a></li>
+            <li><a href="#contact" class="modal-links">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="header-links">
+        <li><a href="#portfolio" class="header-links link-one">Portfolio</a></li>
+        <li><a href="#about" class="header-links link-two">About</a></li>
+        <li><a href="#contact" class="header-links link-three">Contact</a></li>
+        <li><a href="#user-text" class="header-links link-four"><i class="fa-solid fa-envelope"></i></a></li>
+      </ul>
+    </header>
+    <section class="headline">
+      <h1 class="primary-text">Hey There. <br> I'm Tushar</h1>
+      <h3 class="sub-text">I am a Software Developer</h3>
+      <p class="description">I can help you build a product, feature or website.
+        Look through some of my work and experience! If you like what you see and have a project you need coded,
+        don't hestiate to contact me.</p>
+      <nav class="social-media" rel="noopener">
+        <ul>
+          <li> <a href="https://github.com/PinkMoon25" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a> </li>
+          <li> <a href="https://www.linkedin.com/in/tushar-singh-6b063a14b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a> </li>
+          <li> <a href="https://twitter.com/TusharS90674484" rel="noopener"><i class="fa-brands fa-twitter"></i></a> </li>
+          <li> <a href="#user-email" rel="noopener"><i class="fa-solid fa-m"></i></a> </li>
+          <li> <a href="#peace" rel="noopener"><i class="fa-solid fa-hand-peace"></i></a> </li>
+        </ul>
+      </nav>
+    </section>
+  </div>
+  
+  <div class="works" id="portfolio">
+    <h1 class="title">My Recent Works <span class="title-break"></span></h1>
+    <section class="projects">
+    </section>
+  </div>
+
+  <section class="about-me" id="about">
+    <div class="about-top">
+      <h1 class="about-title">About Me</h1>
+      <p class="about-description">Hello I'm a software developer! 
+        I can help you build a product , feature or website. Look through some of my work and experience! 
+        If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+      <button type="button" class="about-btn">Get My Resume</button>
+    </div>
+    <hr class="about-break">
+    <ul class="skills">
+      <li class="skill-card">
+        <div class="skill-title"><div class="icon rectangle"></div> Language</div>
+        <ul>
+          <li>Javascript</li>
+          <li>Ruby</li>
+          <li>Html</li>
+          <li>Css</li>
+        </ul>
+      </li>
+      <li class="skill-card">
+        <div class="skill-title"><div class="icon square"></div> Frameworks</div>
+        <ul>
+          <li>Bootstrap</li>
+          <li>Ruby on Rails</li>
+          <li>RSPec</li>
+          <li>CapyBara</li>
+          <li>Selenium</li>
+        </ul>
+      </li>
+      <li class="skill-card">
+        <div class="skill-title"><div class="icon circle"></div> Skills</div>
+        <ul>
+          <li>Codekit</li>
+          <li>Github</li>
+          <li>Codepen</li>
+          <li>Gitlab</li>
+          <li>Terminal</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  
+    <section class="contact-page" id="contact">
+      <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+      <form action="https://formspree.io/f/myyoovzw" method="POST">
+        <label for="user-name">
+          <input type="text" id="user-name" placeholder="Full name" name="user-name" maxlength="30" size="30" required>
+        </label>
+        <label for="user-email">
+          <input type="email" id="user-email" placeholder="Email address" size="30" name="user-email" required>
+        </label>
+        <label for="user-text">
+          <textarea id="user-text" maxlength="500" cols="30" rows="5" name="user-text" placeholder="Enter text here" required></textarea>
+        </label>
+        <button type="submit">Get in touch</button> 
+      </form>
+    </section>
+    <footer>
+      <ul class="bottom-navlinks">
+        <li> <a class="footer-links" href="https://github.com/PinkMoon25" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a> </li>
+        <li> <a class="footer-links" href="https://www.linkedin.com/in/tushar-singh-6b063a14b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a> </li>
+        <li> <a class="footer-links" href="https://twitter.com/TusharS90674484" rel="noopener"><i class="fa-brands fa-twitter"></i></a> </li>
+        <li> <a class="footer-links" href="#blank" rel="noopener"><i class="fa-solid fa-m"></i></a> </li>
+        <li> <a class="footer-links" href="#peace" rel="noopener"><i class="fa-solid fa-hand-peace"></i></a> </li>
+      </ul>
+      <img src="./Icons/Shape.png" alt="home indicator" class="home-icon">
+    </footer>
+</body>
+</html>
